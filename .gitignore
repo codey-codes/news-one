@@ -12,7 +12,7 @@
 /build
 
 # misc
-/containers/Config
+/src/containers/Config
 .DS_Store
 .env.local
 .env.development.local
