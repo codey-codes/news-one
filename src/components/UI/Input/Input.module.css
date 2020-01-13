@@ -1,0 +1,13 @@
+.Input {
+    border: 1px solid #dadada;
+    outline: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px auto;
+    overflow: hidden;
+    display: block;
+    background-color: transparent;
+    transition: all .4s;
+}

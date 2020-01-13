@@ -1,0 +1,52 @@
+.CategoriesList {
+    width: 100%;
+    background-color: transparent;
+    margin: 0 auto; 
+    transition: all .4s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.CategoriesList div {
+    font-size: 18px;
+    flex: 1 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    transition: all .4s;
+}
+
+.CategoriesList div p {
+    border: .25px solid #636363;
+    margin: 0 5px;
+    padding: 5px 10px;
+    min-width: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    transition: all .4s;
+}
+
+.CategoriesList div p:hover {
+    cursor: pointer;
+    box-shadow: 2px 0 5px #afafaf;
+}
+
+.CategoriesIcon {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.DarkIcon div p img {
+    filter: invert(1);
+}
+
+.LightIcon div p img {
+    filter: none;
+}

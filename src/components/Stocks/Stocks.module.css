@@ -1,0 +1,101 @@
+.Stocks {
+    font-size: 16px;
+    margin: 10px 0;
+    border: .5px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    min-height: 280px;
+}
+
+.Stocks > p:first-child {
+    border-bottom: .5px solid #ccc;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.Stocks div {
+    margin: 0 auto;
+}
+
+.BottomLink {
+    margin: 5px auto;
+    display: block;
+    width: 90%;
+    transition: all .2s;
+    font-size: 16px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.BottomLink:hover {
+    color: #acacac;
+    cursor: pointer;
+}
+
+.OtherLinks {
+    transition: all .2s;
+    font-size: 14px;
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+}
+
+.OtherLinks:hover {
+    color: #acacac;
+    cursor: pointer;
+}
+
+.StockList {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px 0;
+}
+
+.StockList:not(:last-child) {
+    border-bottom: .5px solid #ccc;
+}
+
+.StockList span {
+    font-size: 12px;
+}
+
+.StockList i {
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.Stock {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.Profit {
+    color: #5b975b;
+    display: flex;
+    align-items: center;
+}
+
+.Loss {
+    color: #ff0000;
+    display: flex;
+    align-items: center;
+}
+
+.FlipCaret {
+    transform: rotate(180deg);
+}
+
+.NoData {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 14px;
+    margin: 0 10px;
+    text-align: center;
+}

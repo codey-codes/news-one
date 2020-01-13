@@ -1,0 +1,139 @@
+.ArticlesPage {
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+    min-height: 90vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ArticlesPage h1 {
+    font-size: 26px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.ArticlesSection {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.NoData {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ArticleContainer {
+    min-height: 250px;
+    border: .5px solid #ccc;
+    padding: 15px;
+    border-radius: 6px;
+    flex: 1 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    animation: translateIt .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.TextArea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Author {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.Published, .Updated {
+    font-size: 13px;
+    align-self: flex-end;
+}
+
+.Published {
+    margin-top: 10px;
+}
+
+.ImageContainer {
+    width: 100%;
+    height: 40%;
+    max-height: 300px;
+    border: .5px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.Image img {
+    transition: all .2s;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+}
+
+.Image img:hover {
+    transform: scale(1.1);
+}
+
+.NoImage {
+    width: 50%;
+    height: 50%;
+    margin: 10px 0;
+}
+
+.Link:link,
+.Link:visited {
+    transition: all .2s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.Link:hover,
+.Link:active {
+    text-decoration: none;
+    color: #acacac;
+}
+
+@keyframes translateIt {
+    from { transform: translateY(100vh); }
+    to { transform: translateY(0); }
+}
+
+@media (max-width: 650px) {
+    .ArticlesSection {
+        padding: 0;
+    }
+
+    .ArticleContainer {
+        flex: 1 0 95%;
+        margin: 10px 0;
+    }
+}

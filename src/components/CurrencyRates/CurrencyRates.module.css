@@ -1,0 +1,110 @@
+.Rates {
+    font-size: 16px;
+    margin: 10px 0;
+    border: .5px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+    min-height: 280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Rates > p:first-child {
+    border-bottom: .5px solid #ccc;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.Hide h1,
+.Show h1 {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: 5px auto;
+    border-bottom: .5px solid #ccc;
+    padding-bottom: 2px;
+    font-size: 20px;
+}
+
+.Hide h1,
+.Hide a {
+    display: none;
+}
+
+.Show h1,
+.Show a {
+    display: block;
+}
+
+.RateValues {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.RateValue {
+    flex: 1 0 45%;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: .5px solid #ccc;
+}
+
+.RateValue:nth-child(odd) {
+    margin-right: 10px;
+}
+
+.Currency {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+}
+
+.CurrencyFormat {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.NoData {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 14px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.OtherLinks {
+    transition: all .2s;
+    font-size: 14px;
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+}
+
+.OtherLinks:hover {
+    color: #acacac;
+    cursor: pointer;
+}
+
+.BottomLink {
+    margin: 5px auto;
+    display: block;
+    width: 90%;
+    transition: all .2s;
+    font-size: 16px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.BottomLink:hover {
+    color: #acacac;
+    cursor: pointer;
+}

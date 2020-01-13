@@ -1,0 +1,58 @@
+.AboutPage {
+    width: 100%;
+    padding: 10px;
+}
+
+.AboutPage h1 {
+    font-size: 26px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.AboutPage h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.AboutPage p {
+    font-size: 16px;
+}
+
+.AboutPage > p {
+    margin: 20px auto;
+}
+
+.SocialMediaIcons {
+    width: 100%;
+    text-align: center;
+}
+
+.SocialMediaIcons > a:link,
+.SocialMediaIcons > a:visited,
+.SocialMediaIcons > a:hover,
+.SocialMediaIcons > a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.SocialMediaIcons a i {
+    font-size: 30px;
+    margin: 15px 10px;
+    transition: all .2s;
+}
+
+.SocialMediaIcons a i:hover {
+    color: #ccc;
+}
+
+@media (max-width: 600px) {
+    .SocialMediaIcons {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .AboutPage {
+        padding: 5px;
+    }
+}

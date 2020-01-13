@@ -1,0 +1,7 @@
+.SearchIcon {
+    font-size: 22px;
+}
+
+.SearchIcon:hover {
+    cursor: pointer;
+}

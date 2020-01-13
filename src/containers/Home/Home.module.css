@@ -1,0 +1,350 @@
+.Home {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Home h1 {
+    font-size: 26px;
+    margin: 15px 10px 0;
+    text-align: center;
+}
+
+.DataSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.SearchResultsHeading {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-top: .5px solid #ccc;
+    border-bottom: .5px solid #ccc;
+}
+
+.CountryName {
+    font-size: 13px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.CountryName:hover {
+    cursor: pointer;
+}
+
+.CountryNamesList {
+    padding-bottom: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+}
+
+.CountryNamesList div {
+    flex: 1 0 40%;
+    align-self: center;
+    margin: 5px 0;
+    width: 50%;
+}
+
+.CountryNamesList div span {
+    padding: 2px;
+    border-bottom: .5px solid transparent;
+    font-size: 14px;
+    transition: all .2s;
+}
+
+.CountryNamesList div span:hover {
+    cursor: pointer;
+    border-bottom: .5px solid #ccc;
+}
+
+.PrimaryData {
+    flex: 1 0 75%;
+    margin: 0 10px;
+    position: relative;
+    min-height: 90vh;
+}
+
+.SecondaryData {
+    flex: 1 0 20%;
+    margin: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FilterSection {
+    height: auto;
+    user-select: none;
+}
+
+.FilterHeading {
+    margin: 10px;
+}
+
+.FilterHeading i {
+    margin: 5px 7.5px;
+    font-size: 18px;
+    transition: all .4s;
+}
+
+.FlipCaretUp {
+    transform: rotate(-180deg);
+}
+
+.FlipCaretDown {
+    transform: rotate(0deg);
+    padding-bottom: 2px;
+}
+
+.NoResults {
+    font-size: 18px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.NoResults span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Headline {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: .5px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    animation: translateIt .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.Headline:last-child {
+    border-bottom: .5px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.Image {
+    width: 40%;
+    max-height: 280px;
+    overflow: hidden;
+    flex: 1 0 40%;
+    border: 1px solid #ccc;
+}
+
+.Image img {
+    width: 100%;
+    display: block;
+    transition: all .2s;
+}
+
+.Image img:hover {
+    transform: scale(1.1);
+}
+
+.TextArea {
+    height: 100%;
+    flex: 1 0 50%;
+    align-self: stretch;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Title:link,
+.Title:visited {
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .2s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.Title:hover,
+.Title:active {
+    text-decoration: none;
+    color: #acacac;
+}
+
+.Author,
+.Date {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+    display: block;
+}
+
+.Author {
+    margin-bottom: 15px;
+}
+
+.Date {
+    margin: 5px 0 15px 0;
+}
+
+.Content {
+    font-size: 16px;
+}
+
+.Link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: .5px solid #ccc;
+    padding: 5px 0 0;
+}
+
+.Link:link,
+.Link:visited {
+    transition: all .2s;
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.Link:hover,
+.Link:active {
+    text-decoration: none;
+    color: #acacac;
+}
+
+.Link i {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+@keyframes translateIt {
+    from {
+        transform: translateY(100vh);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1100px) {
+    .DataSection {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .SecondaryData {
+        width: 90%;
+        padding: 10px;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .SecondaryData>div:first-child {
+        flex: 1 0 95%;
+        margin: 10px 5px;
+    }
+
+    .SecondaryData>div:nth-child(2),
+    .SecondaryData>div:nth-child(3) {
+        flex: 1 0 45%;
+        align-self: stretch;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .Headline {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .Image {
+        width: 100%;
+        max-height: unset;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+
+    .TextArea {
+        padding: 0;
+    }
+
+    .Link:link,
+    .Link:visited {
+        border: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .Home {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .DataSection {
+        flex-direction: column;
+    }
+
+    .Title:link,
+    .Title:visited {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .Content {
+        font-size: 14px;
+    }
+
+    .Author,
+    .Date,
+    .Link:link,
+    .Link:visited {
+        font-size: 11px;
+    }
+
+    .SecondaryData {
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SecondaryData>div:first-child {
+        margin: 10px 0;
+    }
+
+    .SecondaryData>div:nth-child(2) {
+        margin: 0 0 10px;
+    }
+
+    .SecondaryData>div:nth-child(3) {
+        margin: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .Headline {
+        padding: 10px 0 0;
+    }
+}

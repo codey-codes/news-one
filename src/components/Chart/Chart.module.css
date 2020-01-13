@@ -1,0 +1,157 @@
+.ChartContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Chart {
+    width: 280px;
+    min-height: 300px;
+    border: .5px solid #ccc;
+    border-radius: 6px;
+    background-color: transparent;
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.VerticalAxisValues {
+    position: absolute;
+    border-right: 1px solid #ccc;
+    padding: 10px 5px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.VerticalAxisValues span {
+    font-size: 13px;
+}
+
+.ChartData {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
+.Values {
+    width: 1px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent; 
+    height: 260px;
+    position: absolute;
+    bottom: 20px;
+    overflow: visible;
+} 
+
+.Values div {
+    width: 1px;
+    height: 100%;
+    display: none;
+    background-color: #ccc;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Value {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    overflow: visible;
+}
+
+.Value span {
+    position: absolute;
+    top: -12px;
+    left: -5px;
+    color: #fff;
+    user-select: none;
+    display: none;
+    padding: 1px;
+    font-size: 12px;
+    display: block;
+    transform: scale(0);
+    transition: all .1s;
+    z-index: 1000;
+}
+
+.Value:nth-child(1) {
+    background-color: rgba(238, 130, 238, 0.8);
+    z-index: 20;
+}
+
+.Value:nth-child(1) span {
+    background: rgba(238, 130, 238, 0.8);
+}
+
+.Value:nth-child(2) {
+    background-color: rgba(0, 128, 128, 0.8);
+    z-index: 10;
+}
+
+.Value:nth-child(2) span {
+    background: rgba(0, 128, 128, 0.8);
+}
+
+.Values:hover div {
+    display: block;
+}
+
+.Values:hover > .Value span,
+.Values:hover > .HorizontalAxisValues {
+    transform: scale(1);
+}
+
+.HorizontalAxisValues {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    transform: scale(0);
+}
+
+.LegendContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.BottomText {
+    margin: 5px 0 0;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+}
+
+.primLegend, .secLegend {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.primLegend {
+    background-color: #ee82ee;
+}
+
+.secLegend {
+    background-color: #008080;
+}
+

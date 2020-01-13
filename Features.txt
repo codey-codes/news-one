@@ -1,0 +1,38 @@
+NEWS:
+    1. Headlines
+    2. Search
+
+ARTICLES:
+    1. Top
+    2. Most Popular
+    3. Search
+
+USER AREA:
+    1. Sign Up:
+        A. Avatar
+        B. Username
+        C. Password
+        D. Password Hint
+        E. Security Questions
+
+    2. Advantages:
+        A. Choose favorite news categories so when seign in, only see related news
+        B. Save news
+        C. Save articles
+
+
+COLORS USED:
+.LightMode {
+  color: #000;
+  background-color: #f2f2f2;
+}
+
+.DarkMode {
+  color: #D6D9DB;
+  background-color: #1A1A1B;
+}
+
+
+KNOWN ISSUES:
+
+1. why page skipping left and right when page is changed from Home to any other

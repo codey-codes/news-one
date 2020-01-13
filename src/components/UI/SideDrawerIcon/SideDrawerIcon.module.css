@@ -1,0 +1,28 @@
+.DrawerToggleIcon {
+    height: 100%;
+    transition: all .4s;
+    display: block;
+    transform-origin: 50% 50%;
+    display: flex;
+    align-items: center;
+    z-index: 150;
+}
+
+.DrawerToggleIcon i {
+    font-size: 40px;
+}
+
+.DrawerToggleIcon i:hover {
+    cursor: pointer;
+}
+
+.DrawerToggleIcon i:active {
+    cursor: pointer;
+    color: #6d6d6d;
+}
+
+@media (min-width: 600px) {
+    .DrawerToggleIcon {
+        display: none;
+    }
+}

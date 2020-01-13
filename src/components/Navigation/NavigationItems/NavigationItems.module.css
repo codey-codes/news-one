@@ -1,0 +1,14 @@
+.NavigationItems {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.NavigationItemsLight * {
+    color: #000;
+}
+
+.NavigationItemsDark * {
+    color: #D6D9DB;
+}
